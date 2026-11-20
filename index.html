@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#e1dad2">
+  <title>场景 1｜纸张展开</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="../css/style.css?v=6">
+</head>
+<body>
+  <main class="experience">
+    <div class="scene" id="scene" aria-label="场景 1，点击纸团展开海报">
+      <img class="ball-photo" id="ball-photo" src="../js/images/paper-ball.png" alt="一团揉皱的纸" draggable="false">
+      <div class="paper-shadow" id="paper-shadow" aria-hidden="true"></div>
+      <canvas class="paper-mesh" id="paper-mesh" aria-hidden="true"></canvas>
+      <div class="poster" id="poster" aria-hidden="true">
+        <canvas id="poster-base"></canvas>
+        <canvas class="ink" id="ink-title"></canvas>
+        <canvas class="ink" id="ink-small"></canvas>
+        <canvas class="ink" id="ink-quotes"></canvas>
+        <img class="final-original" id="final-original" alt="完整展开的原图海报" draggable="false">
+      </div>
+      <img class="flattened-poster" id="flattened-poster" src="../js/images/poster-flat.png" alt="褶皱消退后的平铺海报" draggable="false" aria-hidden="true">
+      <div class="menu-panel" id="menu-panel" aria-hidden="true">
+        <img id="menu-art" src="../js/images/poster-menu.png" alt="右侧菜单：안내（说明）、목차（目录）、더보기（更多）和 게임 시작（开始游戏）" draggable="false">
+      </div>
+      <button class="paper-trigger" id="paper-trigger" aria-label="点击打开纸团" disabled></button>
+      <button class="menu-reveal" id="menu-reveal" aria-label="点击画面，显示右侧菜单" hidden></button>
+    </div>
+    <div class="controls">
+      <p id="status" role="status" aria-live="polite">正在准备纸张…</p>
+      <button id="replay" hidden>重新展开</button>
+    </div>
+    <noscript>请开启 JavaScript，以播放纸张展开动画。</noscript>
+  </main>
+  <script src="../js/data.js?v=3"></script>
+  <script src="../js/paper-motion.js?v=3"></script>
+  <script src="../js/main.js?v=6"></script>
+</body>
+</html>
