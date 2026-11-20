@@ -1,0 +1,99 @@
+* { box-sizing: border-box; }
+:root {
+  color-scheme: light;
+  background: #e1dad2;
+  color: #435063;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+body {
+  min-width: 320px;
+  min-height: 100svh;
+  margin: 0;
+  display: grid;
+  place-items: center;
+  background: radial-gradient(ellipse at center, #eae5df, #dcd5ce);
+}
+.experience { width: 100%; min-width: 0; padding: 12px 16px; overflow-x: auto; }
+.scene {
+  position: relative;
+  width: min(100%, 1488px, calc((100svh - 68px) * 1.40776));
+  aspect-ratio: 1488 / 1057;
+  margin: auto;
+  isolation: isolate;
+  overflow: hidden;
+  background: #e1dad2;
+}
+.ball-photo, .paper-mesh, .poster, .poster canvas, .final-original, .flattened-poster {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.ball-photo { object-fit: fill; user-select: none; }
+.paper-shadow {
+  position: absolute;
+  inset: 5% 3% 1%;
+  border-radius: 9%;
+  background: #4e4035;
+  filter: blur(14px);
+  opacity: 0;
+  pointer-events: none;
+  transform-origin: 50% 55%;
+}
+.paper-mesh { opacity: 0; pointer-events: none; }
+.poster { opacity: 0; pointer-events: none; }
+.ink, .final-original { opacity: 0; }
+.flattened-poster {
+  opacity: 0;
+  object-fit: fill;
+  pointer-events: none;
+  user-select: none;
+  -webkit-mask-image: radial-gradient(ellipse at 50% 48%, black -48%, transparent -24%);
+  mask-image: radial-gradient(ellipse at 50% 48%, black -48%, transparent -24%);
+}
+.menu-reveal {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+.scene.menu-visible { overflow: visible; }
+.menu-panel {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 20.967742%;
+  height: 100%;
+  overflow: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+/* 只取参考图最右侧的 312 像素；海报沿用原来的平铺图和原尺寸。 */
+.menu-panel img {
+  position: absolute;
+  top: 0;
+  left: -376.923077%;
+  width: 476.923077%;
+  height: 100%;
+  display: block;
+  object-fit: fill;
+  user-select: none;
+}
+.menu-reveal { border: 0; padding: 0; background: transparent; cursor: pointer; }
+.menu-reveal:focus-visible { outline: 2px solid #304e79; outline-offset: -4px; }
+.paper-trigger {
+  position: absolute;
+  left: 24%; top: 10%; width: 48%; height: 76%;
+  border: 0; border-radius: 45%;
+  padding: 0; background: transparent; cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+.paper-trigger:focus-visible { outline: 2px solid #304e79; outline-offset: 8px; }
+.paper-trigger:disabled { cursor: wait; pointer-events: none; }
+.controls { display: flex; align-items: center; justify-content: center; height: 36px; }
+.controls p { margin: 10px 0 0; font-size: 14px; letter-spacing: .1em; }
+#replay { margin-top: 10px; padding: 5px 14px; border: 1px solid #8a96a5; border-radius: 4px; background: transparent; color: #304e79; font: inherit; font-size: 14px; cursor: pointer; }
+#replay:hover { background: #f1ece5; }
+[hidden] { display: none !important; }
+@media (max-width: 600px) { .experience { padding: 8px; } }
