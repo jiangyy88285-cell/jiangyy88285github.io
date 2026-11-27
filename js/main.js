@@ -291,6 +291,7 @@
     cancelAnimationFrame(raf); busy=false;
     menuAnimations.forEach(animation=>animation.cancel()); menuAnimations=[];
     menuReady=false; menuReveal.hidden=true;
+    document.querySelectorAll('.menu-hotspot').forEach(button=>button.disabled=true);
     scene.classList.remove("menu-visible");
     menuPanel.style.opacity=0; menuPanel.setAttribute("aria-hidden","true");
     flattened.style.transform="none";
@@ -319,6 +320,7 @@
     flattened.removeAttribute("aria-hidden");
     menuPanel.removeAttribute("aria-hidden");
     scene.classList.add("menu-visible");
+    document.querySelectorAll('.menu-hotspot').forEach(button=>button.disabled=false);
     const duration=reduced ? 100 : 750;
     menuAnimations.push(menuPanel.animate([
       {opacity:0,transform:"translateX(8px)"},
