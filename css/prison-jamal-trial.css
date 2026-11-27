@@ -1,0 +1,6 @@
+.prison-jamal-trial-scene { z-index:340; overflow:hidden; background:#183b65; color:#183b65; cursor:pointer; font-family:"AppleMyungjo","Batang","바탕","Noto Serif KR",serif; }
+.prison-jamal-trial-art { position:absolute; inset:0; overflow:hidden; pointer-events:none; }
+.prison-jamal-trial-art img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:center; opacity:0; transform:scale(1.02); user-select:none; }
+.prison-jamal-trial-scene > p { position:absolute; z-index:2; top:4%; left:6%; width:88%; margin:0; font-size:clamp(11px,2.7cqh,24px); line-height:1.85; white-space:pre-line; word-break:keep-all; overflow-wrap:anywhere; }
+.prison-jamal-trial-scene[data-image="4"] > p { top:auto; bottom:4%; }
+.prison-jamal-trial-scene:focus { outline:none; }

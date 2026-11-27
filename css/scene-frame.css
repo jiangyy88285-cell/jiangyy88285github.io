@@ -1,0 +1,49 @@
+/* 后续各幕沿用开头纸面的 1488:1057 画框和高度留白。 */
+.memory-gallery, .restaurant-entrance, .tasting-scene, .four-months-scene, .dinner-night-scene, .bombing-scene, .aftermath-scene, .return-home-scene, .reopening-scene, .wedding-scene, .wedding-family-scene, .apprentice-scene, .street-fire-scene, .medicine-threat-scene, .officers-visit-scene, .officers-meal-scene, .truck-departure-scene, .prosperity-scene, .tony-conflict-scene, .tony-tear-scene, .family-call-scene, .za-attack-scene, .za-farewell-scene, .restaurant-raid-scene, .tony-news-scene, .prison-kitchen-scene, .prison-chili-scene, .prison-after-scene, .prison-message-scene, .prison-retaliation-scene, .prison-knife-scene, .prison-release-scene, .prison-home-call-scene, .prison-christmas-scene, .prison-christmas-undercurrent-scene, .prison-blue-on-blue-scene, .prison-escape-scene, .prison-grenade-scene, .prison-grenade-aftermath-scene, .prison-za-reunion-scene, .prison-school-transport-scene, .prison-escape-plan-scene, .prison-jamal-protection-scene, .prison-morgan-trial-scene, .prison-saif-challenge-scene, .prison-jamal-trial-scene, .prison-night-talk-scene, .prison-trunk-choice-scene, .prison-checkpoint-scene, .prison-phone-command-scene, .prison-street-explosion-scene, .prison-children-rescue-scene, .prison-egg-montage-scene, .prison-mobilization-scene, .prison-cola-promise-scene, .prison-potato-confession-scene, .prison-ma-sacrifice-scene, .prison-after-ma-scene, .prison-rescue-choice-scene, .prison-self-escape-e-scene, .prison-secret-oath-scene, .prison-friday-escape-scene, .prison-desert-flight-scene, .prison-border-village-scene, .prison-village-night-scene, .prison-village-capture-scene, .prison-mouth-choice-scene, .prison-homecoming-d-scene, .prison-restaurant-return-d-scene, .prison-reunion-d-scene, .story-summary, .game-view {
+  position: fixed;
+  inset: auto;
+  left: 50%; top: calc(50% - 18px);
+  width: min(calc(100% - 32px), 1488px, calc((100svh - 68px) * 1.40776));
+  height: auto; min-height: 0;
+  aspect-ratio: 1488 / 1057;
+  transform: translate(-50%, -50%);
+  container-type: size;
+  /* Explicit block size keeps container-relative layout measurable. */
+  height: min(calc((100vw - 32px) / 1.40776), calc(1488px / 1.40776), calc(100svh - 68px));
+}
+.memory-narration {
+  height: 24cqh; min-height: 0;
+  font-size: clamp(12px, 2.65cqh, 23px); line-height: 1.8;
+}
+.memory-track {
+  height: 49cqh; min-height: 0; padding-block: 2cqh;
+}
+.memory-fragment {
+  width: calc(var(--fragment-width) * 25cqh);
+}
+.memory-context {
+  margin-block: 2cqh; padding-top: 1.5cqh;
+  font-size: clamp(10px, 1.9cqh, 17px); line-height: 1.7;
+}
+.memory-footer { margin-bottom: 2cqh; min-height: 0; }
+.memory-footer small { font-size: clamp(9px, 1.6cqh, 12px); }
+.restaurant-entrance-title { font-size: clamp(28px, 9cqh, 88px); }
+.tasting-prose {
+  font-size: clamp(14px, 3.2cqh, 28px);
+  padding-top: 5cqh; line-height: 1.85;
+}
+.tasting-choices { gap: 4cqh; padding: 3cqh; }
+.tasting-choices h2 { font-size: clamp(17px, 4cqh, 34px); padding: 3cqh 5cqh; }
+.tasting-choice-row button { font-size: clamp(14px, 2.9cqh, 25px); padding: 2.5cqh 3cqh; }
+.game-view .reading-layout { flex: 1; min-height: 0; height: auto; }
+@media(max-width:600px) {
+  .memory-gallery, .restaurant-entrance, .tasting-scene, .four-months-scene, .dinner-night-scene, .bombing-scene, .aftermath-scene, .return-home-scene, .reopening-scene, .wedding-scene, .wedding-family-scene, .apprentice-scene, .street-fire-scene, .medicine-threat-scene, .officers-visit-scene, .officers-meal-scene, .truck-departure-scene, .prosperity-scene, .tony-conflict-scene, .tony-tear-scene, .family-call-scene, .za-attack-scene, .za-farewell-scene, .restaurant-raid-scene, .tony-news-scene, .prison-kitchen-scene, .prison-chili-scene, .prison-after-scene, .prison-message-scene, .prison-retaliation-scene, .prison-knife-scene, .prison-release-scene, .prison-home-call-scene, .prison-christmas-scene, .prison-christmas-undercurrent-scene, .prison-blue-on-blue-scene, .prison-escape-scene, .prison-grenade-scene, .prison-grenade-aftermath-scene, .prison-za-reunion-scene, .prison-school-transport-scene, .prison-escape-plan-scene, .prison-jamal-protection-scene, .prison-morgan-trial-scene, .prison-saif-challenge-scene, .prison-jamal-trial-scene, .prison-night-talk-scene, .prison-trunk-choice-scene, .prison-checkpoint-scene, .prison-phone-command-scene, .prison-street-explosion-scene, .prison-children-rescue-scene, .prison-egg-montage-scene, .prison-mobilization-scene, .prison-cola-promise-scene, .prison-potato-confession-scene, .prison-ma-sacrifice-scene, .prison-after-ma-scene, .prison-rescue-choice-scene, .prison-self-escape-e-scene, .prison-secret-oath-scene, .prison-friday-escape-scene, .prison-desert-flight-scene, .prison-border-village-scene, .prison-village-night-scene, .prison-village-capture-scene, .prison-mouth-choice-scene, .prison-homecoming-d-scene, .prison-restaurant-return-d-scene, .prison-reunion-d-scene, .story-summary, .game-view {
+    width: min(calc(100% - 16px), 1488px, calc((100svh - 68px) * 1.40776));
+    height: min(calc((100vw - 16px) / 1.40776), calc(1488px / 1.40776), calc(100svh - 68px));
+  }
+  .memory-narration { font-size: clamp(10px, 2.65cqh, 23px); }
+  .tasting-prose { font-size: clamp(11px, 3.2cqh, 28px); }
+  .tasting-choice-row { flex-direction: row; gap: 2cqh; }
+  .tasting-choice-row button { font-size: clamp(10px, 2.9cqh, 25px); }
+  .tasting-choices h2 { font-size: clamp(13px, 4cqh, 34px); }
+}

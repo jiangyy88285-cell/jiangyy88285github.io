@@ -1,0 +1,6 @@
+.tony-tear-scene { z-index:210; overflow:hidden; background:var(--page-background); color:#071b33; cursor:pointer; font-family:"AppleMyungjo","Batang","바탕","Noto Serif KR",serif; }
+.tony-tear-scene > img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; user-select:none; }
+.tony-tear-scene > p { position:absolute; top:4%; left:6%; width:88%; margin:0; font-size:clamp(11px,2.7cqh,24px); line-height:1.85; white-space:pre-line; word-break:keep-all; overflow-wrap:anywhere; -webkit-text-stroke:.55px #fff9ef; paint-order:stroke fill; text-shadow:0 0 2px #fff9ef,0 1px 2px #fff9ef; }
+.tony-tear-scene:focus { outline:none; }
+.tony-tear-scene.is-complete { cursor:default; }
+

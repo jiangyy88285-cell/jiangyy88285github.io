@@ -11,7 +11,7 @@ body {
   margin: 0;
   display: grid;
   place-items: center;
-  background: radial-gradient(ellipse at center, #eae5df, #dcd5ce);
+  background: radial-gradient(ellipse at center, #eae5df, #ded6d2);
 }
 .experience { width: 100%; min-width: 0; padding: 12px 16px; overflow-x: auto; }
 .scene {
@@ -21,9 +21,9 @@ body {
   margin: auto;
   isolation: isolate;
   overflow: hidden;
-  background: #e1dad2;
+  background: transparent;
 }
-.ball-photo, .paper-mesh, .poster, .poster canvas, .final-original, .flattened-poster {
+.ball-photo, .paper-mesh, .poster, .poster canvas, .final-original, .flat-edge-blend, .flattened-poster {
   position: absolute;
   inset: 0;
   width: 100%;
@@ -31,6 +31,20 @@ body {
   display: block;
 }
 .ball-photo { object-fit: fill; user-select: none; }
+/* 渐隐照片外围的底色，避免灰色矩形边界；不裁切或缩放纸面内容。 */
+.ball-photo, .poster, .flat-edge-blend {
+  --edge-blend: 4%;
+  -webkit-mask-image:
+    linear-gradient(to right, transparent, #000 var(--edge-blend), #000 calc(100% - var(--edge-blend)), transparent),
+    linear-gradient(to bottom, transparent, #000 var(--edge-blend), #000 calc(100% - var(--edge-blend)), transparent);
+  mask-image:
+    linear-gradient(to right, transparent, #000 var(--edge-blend), #000 calc(100% - var(--edge-blend)), transparent),
+    linear-gradient(to bottom, transparent, #000 var(--edge-blend), #000 calc(100% - var(--edge-blend)), transparent);
+  -webkit-mask-composite: source-in;
+  mask-composite: intersect;
+}
+.ball-photo { --edge-blend: 10%; }
+.flat-edge-blend { pointer-events: none; }
 .paper-shadow {
   position: absolute;
   inset: 5% 3% 1%;
@@ -97,3 +111,18 @@ body {
 #replay:hover { background: #f1ece5; }
 [hidden] { display: none !important; }
 @media (max-width: 600px) { .experience { padding: 8px; } }
+
+/* 菜单与原海报共用连续的纸色底层，填平两张图片之间的灰色接缝。 */
+.scene.menu-visible::before {
+  content: ""; position: absolute; inset: 0 auto 0 0;
+  width: 120.967742%; z-index: -1; pointer-events: none;
+  background: #f7f3e8;
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 3%, #000 97%, transparent), linear-gradient(to bottom, transparent, #000 4%, #000 96%, transparent);
+  mask-image: linear-gradient(to right, transparent, #000 3%, #000 97%, transparent), linear-gradient(to bottom, transparent, #000 4%, #000 96%, transparent);
+  -webkit-mask-composite: source-in; mask-composite: intersect;
+}
+.menu-panel {
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 8%, #000 94%, transparent), linear-gradient(to bottom, transparent, #000 4%, #000 96%, transparent);
+  mask-image: linear-gradient(to right, transparent, #000 8%, #000 94%, transparent), linear-gradient(to bottom, transparent, #000 4%, #000 96%, transparent);
+  -webkit-mask-composite: source-in; mask-composite: intersect;
+}

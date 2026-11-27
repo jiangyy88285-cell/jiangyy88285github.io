@@ -1,0 +1,38 @@
+.dinner-night-scene {
+  z-index: 135; overflow: hidden; cursor: pointer;
+  background: transparent center/cover no-repeat; color: #183b65;
+  font-family: "AppleMyungjo", "Batang", "바탕", "Noto Serif KR", serif;
+}
+.dinner-night-art, .dinner-night-wash, .dinner-blackout { position: absolute; inset: 0; pointer-events: none; }
+.dinner-night-art img {
+  position: absolute; inset: 0; width: 100%; height: 100%;
+  object-fit: cover; object-position: center; opacity: 0;
+  user-select: none;
+}
+.dinner-night-art img[data-image="dinner"] { filter: sepia(.12) brightness(.94); }
+.dinner-night-art img[data-image="night"] { filter: brightness(.48) saturate(.8); }
+.dinner-night-wash {
+  opacity: 0; background: none;
+  transition: opacity 1s ease;
+}
+.dinner-night-scene[data-image="dinner"] .dinner-night-wash { opacity: 1; }
+.dinner-night-scene[data-image="news"] .dinner-night-art::after {
+  content: ""; position: absolute; inset: 0; opacity: .12;
+  background: repeating-linear-gradient(transparent 0 3px,#17365c 3px 4px);
+}
+.dinner-night-prose {
+  position: absolute; left: 6%; top: 5%; width: 84%; margin: 0;
+  font-size: clamp(14px,3.1cqh,27px); font-weight: 400;
+  line-height: 1.9; letter-spacing: .025em;
+  white-space: pre-line; word-break: keep-all; overflow-wrap: anywhere;
+  text-shadow: 0 0 10px #faf2e6aa;
+}
+.dinner-night-scene[data-image="news"] .dinner-night-prose {
+  top: auto; bottom: 8%; text-align: center; color: #fffaf0;
+  font-size: clamp(18px,4cqh,36px); text-shadow: 0 2px 8px #102844,0 0 20px #102844;
+}
+.dinner-blackout { background: #070c15; opacity: 0; }
+.dinner-night-scene.is-complete { cursor: default; }
+.dinner-night-scene:focus { outline: none; }
+@media(max-width:600px) { .dinner-night-prose { font-size: clamp(11px,3.1cqh,27px); } }
+@media(prefers-reduced-motion:reduce) { .dinner-night-art img,.dinner-night-wash { transition: none; } }

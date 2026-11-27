@@ -1,0 +1,14 @@
+.prison-street-explosion-scene { z-index:365; overflow:hidden; background:#183b65; color:#183b65; cursor:pointer; font-family:"AppleMyungjo","Batang","바탕","Noto Serif KR",serif; }
+.prison-street-explosion-art { position:absolute; inset:0; overflow:hidden; pointer-events:none; }
+.prison-street-explosion-art img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:center; opacity:0; transform:scale(1.025); user-select:none; }
+.prison-street-explosion-art .street-explosion-smoke { z-index:2; mask-image:radial-gradient(ellipse 29% 49% at 50% 42%,#000 15%,transparent 85%); }
+.street-explosion-fire { position:absolute; inset:0; z-index:3; opacity:0; mix-blend-mode:screen; background:radial-gradient(ellipse 15% 24% at 49% var(--burn-y,68%),#e88733,transparent 85%); }
+.prison-street-explosion-scene > p { position:absolute; z-index:4; top:4%; left:6%; width:88%; margin:0; font-size:clamp(11px,2.7cqh,24px); line-height:1.85; white-space:pre-line; word-break:keep-all; overflow-wrap:anywhere; }
+.prison-street-explosion-scene[data-phase="exploding"],.prison-street-explosion-scene[data-phase="complete"] { cursor:default; }
+.prison-street-explosion-scene:focus { outline:none; }
+
+.street-explosion-flame { position:absolute; top:var(--burn-y,68%); border-radius:65% 25% 60% 35%; transform-origin:center bottom; background:radial-gradient(ellipse at 50% 80%,#fff4bf 0%,#ffd477 22%,#f49a42 42%,#cf5722 60%,transparent 74%); filter:blur(2px); opacity:0; }
+.street-explosion-ember { position:absolute; top:calc(var(--burn-y,68%) + 4%); border-radius:50%; background:#ffcf83; box-shadow:0 0 5px #e78c37; opacity:0; }
+.prison-street-explosion-scene[data-image="1"] { --burn-y:31%; }
+.prison-street-explosion-scene[data-image="2"] { --burn-y:76%; }
+@media(prefers-reduced-motion:reduce) { .street-explosion-fire,.street-explosion-smoke { display:none; } }

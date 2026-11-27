@@ -1,0 +1,9 @@
+.prison-christmas-scene { z-index:280; overflow:hidden; background:var(--page-background); color:#183b65; cursor:pointer; font-family:"AppleMyungjo","Batang","바탕","Noto Serif KR",serif; }
+.prison-christmas-art { position:absolute; inset:0; overflow:hidden; pointer-events:none; }
+.prison-christmas-art img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; opacity:0; transform:scale(1.02); user-select:none; }
+.prison-christmas-scene > p { position:absolute; z-index:2; top:4%; left:6%; width:88%; margin:0; font-size:clamp(11px,2.7cqh,24px); line-height:1.85; white-space:pre-line; word-break:keep-all; overflow-wrap:anywhere; }
+.prison-christmas-scene[data-image="0"] > p { color:#fff; }
+.prison-christmas-scene[data-image="2"] .prison-christmas-art img { object-position:center bottom; }
+.prison-christmas-scene[data-image="5"] .prison-christmas-art img:last-child { filter:brightness(.20); }
+.prison-christmas-lights { position:absolute; inset:0; z-index:1; opacity:0; pointer-events:none; mix-blend-mode:screen; background:radial-gradient(ellipse at 50% 6%,#ffe8b545,transparent 65%); }
+.prison-christmas-scene:focus { outline:none; }

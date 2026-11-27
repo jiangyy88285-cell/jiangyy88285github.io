@@ -1,0 +1,8 @@
+.prison-knife-scene { z-index:265; overflow:hidden; background:var(--page-background); color:#183b65; cursor:pointer; font-family:"AppleMyungjo","Batang","바탕","Noto Serif KR",serif; }
+.prison-knife-art { position:absolute; inset:0; z-index:0; overflow:hidden; pointer-events:none; }
+.prison-knife-art img,.prison-knife-art canvas { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; opacity:0; transform:scale(1.02); border:0; user-select:none; }
+.prison-knife-art .prison-knife-chain { z-index:1; transform-origin:62% 18%; }
+.prison-knife-scene > p { position:absolute; z-index:2; top:4%; left:6%; width:88%; margin:0; font-size:clamp(11px,2.7cqh,24px); line-height:1.85; white-space:pre-line; word-break:keep-all; overflow-wrap:anywhere; }
+.prison-knife-scene[data-step="0"] > p { color:#fff8ee; }
+.prison-knife-scene:focus { outline:none; }
+.prison-knife-scene[data-phase="complete"] { cursor:default; }

@@ -1,0 +1,8 @@
+.prison-cola-promise-scene { z-index:385; overflow:hidden; background:#183b65; color:#183b65; cursor:pointer; font-family:"AppleMyungjo","Batang","바탕","Noto Serif KR",serif; }
+.prison-cola-promise-art { position:absolute; inset:0; overflow:hidden; pointer-events:none; }
+.prison-cola-promise-art img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:center; opacity:0; transform:scale(1.02); user-select:none; }
+.prison-cola-promise-scene > p { position:absolute; z-index:2; top:4%; left:6%; width:88%; margin:0; font-size:clamp(11px,2.7cqh,24px); line-height:1.85; white-space:pre-line; word-break:keep-all; overflow-wrap:anywhere; }
+
+.prison-cola-promise-scene[data-image="0"] > p { font-size:clamp(11px,2.5cqh,23px); line-height:1.7; }
+.prison-cola-promise-scene[data-phase="complete"] { cursor:default; }
+.prison-cola-promise-scene:focus { outline:none; }

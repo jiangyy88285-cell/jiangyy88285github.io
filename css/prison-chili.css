@@ -1,0 +1,10 @@
+.prison-chili-scene { z-index:245; overflow:hidden; background:var(--page-background); color:#183b65; cursor:pointer; font-family:"AppleMyungjo","Batang","바탕","Noto Serif KR",serif; }
+.prison-chili-art { position:absolute; inset:0; overflow:hidden; pointer-events:none; }
+.prison-chili-art img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; opacity:0; transform:scale(1.015); border:0; user-select:none; }
+.prison-chili-prose { position:absolute; top:4%; left:6%; width:88%; margin:0; opacity:0; font-size:clamp(11px,2.7cqh,24px); line-height:1.85; white-space:pre-line; word-break:keep-all; overflow-wrap:anywhere; }
+.prison-chili-scene .tasting-choices { background:transparent; }
+.prison-chili-scene .tasting-choices[hidden] { display:none; }
+.prison-chili-scene .tasting-choices h2 { background:transparent; box-shadow:none; font-size:clamp(15px,3.6cqh,32px); }
+.prison-chili-scene .tasting-choice-row button { font-size:clamp(12px,2.8cqh,25px); }
+.prison-chili-scene:focus { outline:none; }
+.prison-chili-scene.is-complete { cursor:default; }

@@ -1,0 +1,27 @@
+.bombing-scene {
+  z-index: 140; overflow: hidden; background: #060910; color: #f5f0e7;
+  cursor: pointer; font-family: "AppleMyungjo", "Batang", "바탕", "Noto Serif KR", serif;
+}
+.bombing-world, .bombing-blackout { position: absolute; inset: 0; pointer-events: none; }
+.bombing-world { transform: scale(1.14); will-change: transform; }
+.bombing-world img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center; opacity: 0; user-select: none; }
+.bombing-world .bombing-clock-glow {
+  clip-path: polygon(38% 35%,67% 35%,67% 61%,38% 61%);
+  filter: url(#bombing-red-clock); mix-blend-mode: screen;
+}
+.bombing-scene[data-stage="clock"] .bombing-clock-glow { animation: bombing-clock-pulse 1.8s ease-in-out infinite; }
+.bombing-prose {
+  position: absolute; top: 5%; left: 6%; width: 87%; margin: 0;
+  font-size: clamp(14px,3.1cqh,27px); line-height: 1.9; font-weight: 400;
+  letter-spacing: .035em; word-break: keep-all; overflow-wrap: anywhere;
+  text-shadow: 0 2px 7px #050910,0 0 22px #050910;
+}
+.bombing-scene[data-stage="clock"] .bombing-prose { letter-spacing: .22em; }
+.bombing-blackout { background: #030406; opacity: 0; }
+.bombing-final { position: absolute; inset: 0; display: grid; place-items: center; margin: 0; padding: 8%; text-align: center; opacity: 0; font-size: clamp(22px,4.8cqh,43px); line-height: 1.8; font-weight: 400; letter-spacing: .09em; }
+.bombing-scene[data-stage="blast"] .bombing-prose { top: 43%; text-align: center; font-size: clamp(34px,9cqh,80px); }
+.bombing-scene[data-stage="end"] { cursor: default; }
+.bombing-scene:focus { outline: none; }
+@keyframes bombing-clock-pulse { 0%,30%,100% {opacity:0} 45%,70% {opacity:1} }
+@media(max-width:600px) { .bombing-prose { font-size: clamp(11px,3.1cqh,27px); } }
+@media(prefers-reduced-motion:reduce) { .bombing-scene[data-stage="clock"] .bombing-clock-glow { animation: none; opacity: .6; } }

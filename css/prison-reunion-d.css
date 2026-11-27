@@ -1,0 +1,11 @@
+.prison-reunion-d-scene { z-index:455; overflow:hidden; background:#183b65; color:#183b65; cursor:pointer; font-family:"AppleMyungjo","Batang","바탕","Noto Serif KR",serif; }
+.prison-reunion-d-art { position:absolute; inset:0; overflow:hidden; pointer-events:none; }
+.prison-reunion-d-art img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:center; opacity:0; transform:scale(1.02); user-select:none; }
+.prison-reunion-d-scene > p { position:absolute; z-index:2; top:4%; left:6%; width:88%; margin:0; font-size:clamp(11px,2.7cqh,24px); line-height:1.85; white-space:pre-line; word-break:keep-all; overflow-wrap:anywhere; }
+
+.prison-reunion-d-scene[data-image="3"] > p { font-size:clamp(11px,2.5cqh,23px); line-height:1.7; }
+.prison-reunion-d-scene[data-phase="awaiting-finale"] { cursor:default; }
+.prison-reunion-d-scene:focus { outline:none; }
+
+.prison-reunion-d-ending { position:fixed; inset:0; z-index:1000; display:grid; place-items:center; overflow:auto; background:#fff; color:#183b65; opacity:0; cursor:pointer; font-family:"AppleMyungjo","Batang","바탕","Noto Serif KR",serif; }
+.prison-reunion-d-ending > p { width:min(80%,920px); margin:5vh auto; font-size:clamp(14px,2.5vh,25px); line-height:1.95; white-space:pre-line; word-break:keep-all; overflow-wrap:anywhere; }

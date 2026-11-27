@@ -1,0 +1,8 @@
+.prison-village-night-scene { z-index:430; overflow:hidden; background:#183b65; color:#183b65; cursor:pointer; font-family:"AppleMyungjo","Batang","바탕","Noto Serif KR",serif; }
+.prison-village-night-art { position:absolute; inset:0; overflow:hidden; pointer-events:none; }
+.prison-village-night-art img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:center; opacity:0; transform:scale(1.02); user-select:none; }
+.prison-village-night-scene > p { position:absolute; z-index:2; top:4%; left:6%; width:88%; margin:0; font-size:clamp(11px,2.7cqh,24px); line-height:1.85; white-space:pre-line; word-break:keep-all; overflow-wrap:anywhere; }
+
+.prison-village-night-scene[data-image="3"] > p { font-size:clamp(10px,2.25cqh,21px); line-height:1.65; color:#fff; }
+.prison-village-night-scene[data-phase="complete"] { cursor:default; }
+.prison-village-night-scene:focus { outline:none; }

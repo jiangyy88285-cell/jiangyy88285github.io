@@ -1,0 +1,12 @@
+.prison-kitchen-scene { z-index:240; overflow:hidden; background:#183b65; color:#183b65; cursor:pointer; font-family:"AppleMyungjo","Batang","바탕","Noto Serif KR",serif; }
+.prison-kitchen-art { position:absolute; inset:0; overflow:hidden; pointer-events:none; }
+.prison-kitchen-art img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; opacity:0; transform:scale(1.015); user-select:none; border:0; }
+/* 裁去旗帜素材底部原有中文字幕，同时排除素材黑边。 */
+.prison-kitchen-art img:nth-child(2) { inset:auto; top:-8px; left:-8px; width:calc(100% + 16px); height:calc(123% + 16px); transform:none; }
+.prison-kitchen-scene > p { position:absolute; top:4%; left:6%; width:88%; margin:0; font-size:clamp(11px,2.7cqh,24px); line-height:1.85; white-space:pre-line; word-break:keep-all; overflow-wrap:anywhere; }
+.prison-kitchen-scene[data-step="0"] > p,.prison-kitchen-scene[data-step="1"] > p { color:#fff8ee; }
+.prison-kitchen-scene[data-step="0"] > p,.prison-kitchen-scene[data-step="2"] > p { top:50%; left:50%; transform:translate(-50%,-50%); text-align:center; font-size:clamp(24px,6cqh,54px); }
+.prison-kitchen-scene:focus { outline:none; }
+.prison-kitchen-scene.is-complete { cursor:default; }
+
+.prison-kitchen-scene[data-step="0"] > p { font-weight:700; }

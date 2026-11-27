@@ -1,0 +1,11 @@
+.prison-ma-sacrifice-scene { z-index:395; overflow:hidden; background:#183b65; color:#183b65; cursor:pointer; font-family:"AppleMyungjo","Batang","바탕","Noto Serif KR",serif; }
+.prison-ma-sacrifice-art { position:absolute; inset:0; overflow:hidden; pointer-events:none; }
+.prison-ma-sacrifice-art img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:center; opacity:0; transform:scale(1.02); user-select:none; }
+.prison-ma-sacrifice-scene > p { position:absolute; z-index:2; top:4%; left:6%; width:88%; margin:0; font-size:clamp(11px,2.7cqh,24px); line-height:1.85; white-space:pre-line; word-break:keep-all; overflow-wrap:anywhere; }
+
+.prison-ma-sacrifice-scene[data-image="0"] > p { font-size:clamp(11px,2.5cqh,23px); line-height:1.7; }
+.prison-ma-sacrifice-scene[data-phase="complete"] { cursor:default; }
+.prison-ma-sacrifice-scene:focus { outline:none; }
+
+.prison-ma-sacrifice-scene[data-image="-1"] > p { top:50%; left:10%; width:80%; transform:translateY(-50%); color:#fff; }
+.prison-ma-sacrifice-scene[data-image="3"] > p { top:8%; text-align:center; font-size:clamp(24px,7cqh,65px); }

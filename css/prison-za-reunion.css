@@ -1,0 +1,9 @@
+.prison-za-reunion-scene { z-index:310; overflow:hidden; background:#183b65; color:#183b65; cursor:pointer; font-family:"AppleMyungjo","Batang","바탕","Noto Serif KR",serif; }
+.prison-za-reunion-art { position:absolute; inset:0; overflow:hidden; pointer-events:none; }
+.prison-za-reunion-art img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; opacity:0; transform:scale(1.02); user-select:none; }
+.prison-za-reunion-scene > p { position:absolute; z-index:2; top:4%; left:6%; width:88%; margin:0; font-size:clamp(11px,2.7cqh,24px); line-height:1.85; white-space:pre-line; word-break:keep-all; overflow-wrap:anywhere; }
+.prison-za-reunion-art img:nth-child(2) { object-position:right center; }
+.prison-za-reunion-scene[data-image="1"] > p { top:10%; width:35%; }
+.prison-za-reunion-scene[data-image="2"] > p { top:auto; bottom:4%; color:#fff; }
+.prison-za-reunion-scene[data-image="-1"] > p { top:50%; left:50%; transform:translate(-50%,-50%); color:#fff; text-align:center; font-size:clamp(16px,3.6cqh,32px); }
+.prison-za-reunion-scene:focus { outline:none; }

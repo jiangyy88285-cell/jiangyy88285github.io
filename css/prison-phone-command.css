@@ -1,0 +1,12 @@
+.prison-phone-command-scene { z-index:360; overflow:hidden; background:#183b65; color:#183b65; cursor:pointer; font-family:"AppleMyungjo","Batang","바탕","Noto Serif KR",serif; }
+.prison-phone-command-art { position:absolute; inset:0; overflow:hidden; pointer-events:none; }
+.prison-phone-command-art img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:center; opacity:0; transform:scale(1.02); user-select:none; }
+.prison-phone-command-scene > p { position:absolute; z-index:2; top:4%; left:6%; width:88%; margin:0; font-size:clamp(11px,2.7cqh,24px); line-height:1.85; white-space:pre-line; word-break:keep-all; overflow-wrap:anywhere; }
+
+.prison-phone-command-scene[data-image="0"] > p { font-size:clamp(11px,2.5cqh,23px); line-height:1.7; }
+.prison-phone-command-scene[data-phase="complete"] { cursor:default; }
+.prison-phone-command-scene:focus { outline:none; }
+
+.phone-command-display { position:absolute; inset:0; width:100%; height:100%; z-index:2; opacity:0; transform:scale(1.02); pointer-events:none; }
+.prison-phone-command-scene[data-image="1"] > p { width:42%; }
+.prison-phone-command-scene[data-image="2"] > p { top:auto; bottom:4%; }

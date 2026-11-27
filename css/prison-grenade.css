@@ -1,0 +1,11 @@
+.prison-grenade-scene { z-index:300; overflow:hidden; background:#183b65; color:#183b65; cursor:pointer; font-family:"AppleMyungjo","Batang","바탕","Noto Serif KR",serif; }
+.prison-grenade-art { position:absolute; inset:0; overflow:hidden; pointer-events:none; }
+.prison-grenade-art img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; opacity:0; transform:scale(1.02); user-select:none; }
+.prison-grenade-scene > p { position:absolute; z-index:2; top:4%; left:6%; width:88%; margin:0; font-size:clamp(11px,2.7cqh,24px); line-height:1.85; white-space:pre-line; word-break:keep-all; overflow-wrap:anywhere; }
+.prison-grenade-scene .tasting-choices { background:transparent; }
+.prison-grenade-scene .tasting-choices[hidden] { display:none; }
+.prison-grenade-scene .tasting-choices h2 { background:transparent; box-shadow:none; font-size:clamp(15px,3.6cqh,32px); }
+.prison-grenade-scene .tasting-choice-row button { font-size:clamp(12px,2.8cqh,25px); }
+.prison-grenade-scene[data-phase="awaiting-finale"],.prison-grenade-scene[data-phase="awaiting-continuation"] { cursor:default; }
+.prison-grenade-scene:focus { outline:none; }
+.prison-grenade-scene[data-outcome="all-sacrificed"] > p { top:50%; left:50%; transform:translate(-50%,-50%); color:#fff; text-align:center; font-size:clamp(16px,3.6cqh,32px); }

@@ -1,0 +1,23 @@
+@font-face {
+  font-family: "OpeningHandwriting";
+  src: url("./fonts/NanumBrushScript-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+.peace-intro {
+  position: absolute; inset: 0; z-index: 2;
+  overflow: hidden; pointer-events: none; color: #244b79;
+  background: transparent;
+  font-family: "OpeningHandwriting", cursive;
+}
+.peace-words { position: absolute; inset: 5% 4% 11%; container-type: size; }
+.peace-word {
+  position: absolute; display: block; white-space: nowrap; font-size: clamp(9px, var(--size), 54px);
+  line-height: 1.4; overflow-wrap: anywhere; color: #526a84;
+  opacity: 0; transform: translateY(14px) rotate(var(--tilt)) scale(.15);
+  animation: peace-word-in 1.9s cubic-bezier(.16,1,.3,1) var(--delay) forwards;
+}
+@keyframes peace-word-in { to { opacity: var(--ink); transform: translateY(0) rotate(var(--tilt)) scale(1); } }
+@media (max-width: 600px) { .peace-words { inset-inline: 2%; } }
+@media (prefers-reduced-motion: reduce) { .peace-word { animation-duration: .01ms; animation-delay: 0s; } }

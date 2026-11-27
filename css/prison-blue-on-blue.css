@@ -1,0 +1,10 @@
+.prison-blue-on-blue-scene { z-index:290; overflow:hidden; background:#183b65; color:#183b65; cursor:pointer; font-family:"AppleMyungjo","Batang","바탕","Noto Serif KR",serif; }
+.prison-blue-on-blue-art { position:absolute; inset:-2%; overflow:hidden; pointer-events:none; }
+.prison-blue-on-blue-art img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; opacity:0; transform:scale(1.06); user-select:none; }
+.prison-blue-on-blue-darkness { position:absolute; inset:0; z-index:1; opacity:0; background:#183b65; pointer-events:none; }
+.prison-blue-on-blue-scene > p { position:absolute; z-index:2; top:4%; left:6%; width:88%; margin:0; font-size:clamp(11px,2.7cqh,24px); line-height:1.85; white-space:pre-line; word-break:keep-all; overflow-wrap:anywhere; }
+.prison-blue-on-blue-scene[data-image="0"] > p { top:50%; left:50%; transform:translate(-50%,-50%); text-align:center; font-size:clamp(16px,4.4cqh,39px); }
+.prison-blue-on-blue-scene[data-image="1"] > p { width:40%; }
+.prison-blue-on-blue-scene[data-image="4"] > p { color:#fff; top:auto; bottom:5%; }
+.prison-blue-on-blue-scene[data-phase="unconscious"] { cursor:default; }
+.prison-blue-on-blue-scene:focus { outline:none; }

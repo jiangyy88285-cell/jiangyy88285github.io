@@ -1,0 +1,14 @@
+.prison-potato-confession-scene { z-index:390; overflow:hidden; background:#183b65; color:#183b65; cursor:pointer; font-family:"AppleMyungjo","Batang","바탕","Noto Serif KR",serif; }
+.prison-potato-confession-art { position:absolute; inset:0; overflow:hidden; pointer-events:none; }
+.prison-potato-confession-art img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:center; opacity:0; transform:scale(1.02); user-select:none; }
+.prison-potato-confession-scene > p { position:absolute; z-index:2; top:4%; left:6%; width:88%; margin:0; font-size:clamp(11px,2.7cqh,24px); line-height:1.85; white-space:pre-line; word-break:keep-all; overflow-wrap:anywhere; }
+.prison-potato-confession-scene .tasting-choices { z-index:3; background:transparent; }
+.prison-potato-confession-scene .tasting-choices[hidden] { display:none; }
+.prison-potato-confession-scene .tasting-choices h2 { background:transparent; box-shadow:none; font-size:clamp(15px,3.6cqh,32px); }
+.prison-potato-confession-scene .tasting-choice-row button { font-size:clamp(12px,2.8cqh,25px); }
+.prison-potato-confession-scene[data-phase="missing"],.prison-potato-confession-scene[data-phase="awaiting-stay"] { cursor:default; }
+.prison-potato-confession-scene:focus { outline:none; }
+
+.prison-potato-confession-scene[data-image="-1"] > p { top:50%; left:10%; width:80%; transform:translateY(-50%); color:#fff; font-size:clamp(11px,2.7cqh,24px); }
+.prison-potato-confession-scene .tasting-choices h2 { font-size:clamp(13px,3cqh,27px); }
+.prison-potato-confession-scene[data-phase="awaiting-admit"],.prison-potato-confession-scene[data-phase="awaiting-finale"] { cursor:default; }

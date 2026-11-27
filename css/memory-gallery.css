@@ -1,0 +1,51 @@
+:root { --page-background: radial-gradient(ellipse at center, #eae5df, #ded6d2); }
+body, body.game-mode, .interview-intro { background: var(--page-background); }
+.memory-gallery {
+  position: fixed; inset: 0; z-index: 115; overflow-y: auto;
+  background: var(--page-background); color: #18365e;
+  font-family: "AppleMyungjo", "Batang", "바탕", "Noto Serif KR", serif;
+  animation: memory-arrive .8s ease both;
+}
+.memory-narration {
+  position: relative; width: min(900px, 85%); height: 27svh; min-height: 190px;
+  margin: 0 auto; font-size: clamp(17px, 1.45vw, 23px); line-height: 1.9;
+  word-break: keep-all; overflow-wrap: anywhere;
+}
+.memory-narration p { position: absolute; inset: 0; display: grid; align-content: center; margin: 0; white-space: pre-line; }
+.memory-rail {
+  width: 100%; overflow-x: auto; overflow-y: hidden; scrollbar-width: thin;
+  scrollbar-color: #526a8466 transparent; cursor: grab; touch-action: pan-x;
+  overscroll-behavior-x: contain; outline-offset: -4px;
+}
+.memory-rail.is-dragging { cursor: grabbing; user-select: none; }
+.memory-track {
+  display: flex; align-items: center; gap: clamp(8px, 1vw, 20px);
+  width: max-content; height: 53svh; min-height: 380px;
+  padding: 16px 10vw;
+}
+.memory-fragment {
+  position: relative; flex: none; margin: 0; overflow: hidden;
+  width: calc(var(--fragment-width) * clamp(180px, 28svh, 360px));
+  aspect-ratio: var(--fragment-ratio);
+  transform: translateY(var(--fragment-y)) rotate(var(--fragment-angle));
+  mix-blend-mode: multiply;
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 1%, #000 99%, transparent), linear-gradient(to bottom, transparent, #000 1%, #000 99%, transparent);
+  mask-image: linear-gradient(to right, transparent, #000 1%, #000 99%, transparent), linear-gradient(to bottom, transparent, #000 1%, #000 99%, transparent);
+  -webkit-mask-composite: source-in; mask-composite: intersect;
+}
+.memory-fragment img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; max-width: none; user-select: none; pointer-events: none; }
+.memory-context {
+  width: min(920px, 84%); margin: 24px auto 22px; padding-top: 16px;
+  border-top: 1px solid #294b7755; font-size: clamp(13px, 1.1vw, 17px);
+  line-height: 1.9; word-break: keep-all; overflow-wrap: anywhere;
+}
+.memory-footer { width: min(920px,84%); margin: 0 auto 25px; display: flex; justify-content: space-between; align-items: center; min-height: 32px; }
+.memory-footer small { color: #526a84; font-size: 12px; letter-spacing: .08em; }
+@keyframes memory-arrive { from { opacity: 0; } to { opacity: 1; } }
+@media(max-width:600px) {
+  .memory-narration { height: 32svh; min-height: 240px; font-size: 16px; line-height: 1.8; }
+  .memory-track { height: 46svh; min-height: 380px; padding-block: 8px; }
+  .memory-fragment { width: calc(var(--fragment-width) * 180px); }
+  .memory-context { font-size: 13px; }
+}
+@media(prefers-reduced-motion:reduce) { .memory-gallery { animation: none; } }

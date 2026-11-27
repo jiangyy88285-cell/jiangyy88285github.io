@@ -1,0 +1,12 @@
+.apprentice-scene { z-index:170; overflow:hidden; background:var(--page-background); color:#183b65; cursor:pointer; font-family:"AppleMyungjo","Batang","바탕","Noto Serif KR",serif; }
+.apprentice-art { position:absolute; inset:0; pointer-events:none; }
+.apprentice-art img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; opacity:0; user-select:none; }
+.apprentice-prose { position:absolute; top:5%; left:6%; width:86%; margin:0; opacity:0; white-space:pre-line; font-size:clamp(11px,2.8cqh,25px); line-height:1.85; word-break:keep-all; overflow-wrap:anywhere; }
+.apprentice-scene[data-step="0"] .apprentice-prose { text-align:center; }
+.apprentice-scene[data-step="1"] .apprentice-prose { width:60%; }
+.apprentice-scene[data-step="2"] .apprentice-prose { width:38%; color:#fff8ee; }
+.apprentice-scene[data-step="3"] .apprentice-prose { left:71%; top:37%; width:25%; font-size:clamp(10px,2.55cqh,23px); }
+.apprentice-scene[data-step="4"] .apprentice-prose { top:3%; }
+.apprentice-scene[data-step="5"] .apprentice-prose { width:44%; top:4%; font-size:clamp(10px,2.6cqh,24px); }
+.apprentice-scene:focus { outline:none; }
+.apprentice-scene.is-complete { cursor:default; }

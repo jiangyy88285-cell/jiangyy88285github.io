@@ -1,0 +1,8 @@
+.prison-release-scene { z-index:270; overflow:hidden; background:var(--page-background); color:#183b65; cursor:pointer; font-family:"AppleMyungjo","Batang","바탕","Noto Serif KR",serif; }
+.prison-release-art { position:absolute; inset:0; z-index:0; overflow:hidden; pointer-events:none; }
+.prison-release-art img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; opacity:0; transform:scale(1.02); border:0; user-select:none; }
+.prison-release-scene > p { position:absolute; z-index:2; top:4%; left:6%; width:88%; margin:0; font-size:clamp(11px,2.7cqh,24px); line-height:1.85; white-space:pre-line; word-break:keep-all; overflow-wrap:anywhere; }
+.prison-release-scene:focus { outline:none; }
+.prison-release-scene.is-complete { cursor:default; }
+
+.prison-release-scene[data-image="officer"] .prison-release-art img { object-position:right center; }

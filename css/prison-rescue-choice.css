@@ -1,0 +1,13 @@
+.prison-rescue-choice-scene { z-index:405; overflow:hidden; background:#f7f4ec; color:#183b65; cursor:pointer; font-family:"AppleMyungjo","Batang","바탕","Noto Serif KR",serif; }
+.prison-rescue-choice-art { position:absolute; inset:0; overflow:hidden; pointer-events:none; }
+.prison-rescue-choice-art img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:center; opacity:0; transform:scale(1.02); user-select:none; }
+.prison-rescue-choice-scene > p { position:absolute; z-index:2; top:4%; left:6%; width:88%; margin:0; font-size:clamp(11px,2.7cqh,24px); line-height:1.85; white-space:pre-line; word-break:keep-all; overflow-wrap:anywhere; }
+.prison-rescue-choice-scene .tasting-choices { z-index:3; background:transparent; }
+.prison-rescue-choice-scene .tasting-choices[hidden] { display:none; }
+.prison-rescue-choice-scene .tasting-choices h2 { background:transparent; box-shadow:none; font-size:clamp(15px,3.6cqh,32px); }
+.prison-rescue-choice-scene .tasting-choice-row button { font-size:clamp(12px,2.8cqh,25px); }
+.prison-rescue-choice-scene[data-phase="missing"],.prison-rescue-choice-scene[data-phase="awaiting-stay"] { cursor:default; }
+.prison-rescue-choice-scene:focus { outline:none; }
+
+.prison-rescue-choice-scene .tasting-choices h2 { font-size:clamp(12px,3cqh,27px); }
+.prison-rescue-choice-scene[data-phase="awaiting-continuation"] { cursor:default; }

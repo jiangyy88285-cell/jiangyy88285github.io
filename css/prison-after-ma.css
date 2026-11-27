@@ -1,0 +1,11 @@
+.prison-after-ma-scene { z-index:400; overflow:hidden; background:#183b65; color:#183b65; cursor:pointer; font-family:"AppleMyungjo","Batang","바탕","Noto Serif KR",serif; }
+.prison-after-ma-art { position:absolute; inset:0; overflow:hidden; pointer-events:none; }
+.prison-after-ma-art img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:center; opacity:0; transform:scale(1.02); user-select:none; }
+.prison-after-ma-scene > p { position:absolute; z-index:2; top:4%; left:6%; width:88%; margin:0; font-size:clamp(11px,2.7cqh,24px); line-height:1.85; white-space:pre-line; word-break:keep-all; overflow-wrap:anywhere; }
+
+.prison-after-ma-scene[data-image="0"] > p { font-size:clamp(11px,2.5cqh,23px); line-height:1.7; }
+.prison-after-ma-scene[data-phase="complete"] { cursor:default; }
+.prison-after-ma-scene:focus { outline:none; }
+
+.prison-after-ma-scene[data-image="0"] > p { top:auto; bottom:5%; color:#fff; }
+.prison-after-ma-scene[data-image="2"] > p { top:50%; transform:translateY(-50%); text-align:center; font-size:clamp(24px,7cqh,62px); font-weight:700; }

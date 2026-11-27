@@ -1,0 +1,7 @@
+.za-farewell-scene { z-index:225; overflow:hidden; background:var(--page-background); color:#183b65; cursor:pointer; font-family:"AppleMyungjo","Batang","바탕","Noto Serif KR",serif; }
+.za-farewell-art { position:absolute; inset:0; pointer-events:none; }
+.za-farewell-art img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; opacity:0; user-select:none; }
+.za-farewell-scene > p { position:absolute; top:4%; left:6%; width:88%; margin:0; font-size:clamp(11px,2.7cqh,24px); line-height:1.85; white-space:pre-line; word-break:keep-all; overflow-wrap:anywhere; }
+.za-farewell-scene[data-step="1"] > p { color:#fff8ee; }
+.za-farewell-scene:focus { outline:none; }
+.za-farewell-scene.is-complete { cursor:default; }

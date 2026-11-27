@@ -1,0 +1,10 @@
+.prison-message-scene { z-index:255; overflow:hidden; background:var(--page-background); color:#183b65; cursor:pointer; font-family:"AppleMyungjo","Batang","바탕","Noto Serif KR",serif; }
+.prison-message-art { position:absolute; inset:0; overflow:hidden; pointer-events:none; }
+.prison-message-art img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; opacity:0; transform:scale(1.015); border:0; user-select:none; }
+.prison-message-prose { position:absolute; top:4%; left:6%; width:88%; margin:0; opacity:0; font-size:clamp(11px,2.7cqh,24px); line-height:1.85; white-space:pre-line; word-break:keep-all; overflow-wrap:anywhere; }
+.prison-message-scene .tasting-choices { background:transparent; }
+.prison-message-scene .tasting-choices[hidden] { display:none; }
+.prison-message-scene .tasting-choices h2 { background:transparent; box-shadow:none; font-size:clamp(15px,3.6cqh,32px); }
+.prison-message-scene .tasting-choice-row button { font-size:clamp(12px,2.8cqh,25px); }
+.prison-message-scene:focus { outline:none; }
+.prison-message-scene.is-complete { cursor:default; }

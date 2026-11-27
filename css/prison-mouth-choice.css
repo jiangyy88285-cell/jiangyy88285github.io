@@ -1,0 +1,19 @@
+.prison-mouth-choice-scene { z-index:440; overflow:hidden; background:#f7f4ec; color:#183b65; cursor:pointer; font-family:"AppleMyungjo","Batang","바탕","Noto Serif KR",serif; }
+.prison-mouth-choice-art { position:absolute; inset:0; overflow:hidden; pointer-events:none; }
+.prison-mouth-choice-art img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:center; opacity:0; transform:scale(1.02); user-select:none; }
+.prison-mouth-choice-scene > p { position:absolute; z-index:2; top:4%; left:6%; width:88%; margin:0; font-size:clamp(11px,2.7cqh,24px); line-height:1.85; white-space:pre-line; word-break:keep-all; overflow-wrap:anywhere; }
+.prison-mouth-choice-scene .tasting-choices { z-index:3; background:transparent; }
+.prison-mouth-choice-scene .tasting-choices[hidden] { display:none; }
+.prison-mouth-choice-scene .tasting-choices h2 { background:transparent; box-shadow:none; font-size:clamp(15px,3.6cqh,32px); }
+.prison-mouth-choice-scene .tasting-choice-row button { font-size:clamp(12px,2.8cqh,25px); }
+.prison-mouth-choice-scene[data-phase="missing"],.prison-mouth-choice-scene[data-phase="awaiting-stay"] { cursor:default; }
+.prison-mouth-choice-scene:focus { outline:none; }
+
+.prison-mouth-choice-scene .tasting-choices h2 { font-size:clamp(12px,3cqh,27px); }
+.prison-mouth-choice-scene[data-phase="awaiting-continuation"] { cursor:default; }
+
+.prison-mouth-choice-white { position:fixed; inset:0; z-index:1000; background:#fff; opacity:0; pointer-events:none; }
+
+.prison-mouth-choice-scene[data-image="2"] > p { left:50%; width:44%; font-size:clamp(11px,2.6cqh,23px); line-height:1.8; }
+.prison-mouth-choice-blue { position:fixed; inset:0; z-index:1000; display:grid; place-items:center; background:#183b65; color:#fff; opacity:0; pointer-events:none; font-family:"AppleMyungjo","Batang","바탕","Noto Serif KR",serif; }
+.prison-mouth-choice-blue > p { width:min(80%,900px); margin:0; text-align:center; font-size:clamp(16px,2.6vh,26px); line-height:1.9; word-break:keep-all; }

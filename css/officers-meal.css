@@ -1,0 +1,7 @@
+.officers-meal-scene { z-index:190; overflow:hidden; background:var(--page-background); color:#fff8ee; cursor:pointer; font-family:"AppleMyungjo","Batang","바탕","Noto Serif KR",serif; }
+.officers-meal-art { position:absolute; inset:0; pointer-events:none; }
+.officers-meal-art img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; opacity:0; user-select:none; }
+.officers-meal-scene > p { position:absolute; top:4%; left:6%; width:56%; margin:0; font-size:clamp(11px,2.8cqh,25px); line-height:1.85; white-space:pre-line; word-break:keep-all; overflow-wrap:anywhere; text-shadow:0 1px 3px #183657; }
+.officers-meal-scene[data-step="2"] > p { width:88%; color:#183b65; text-shadow:none; }
+.officers-meal-scene:focus { outline:none; }
+.officers-meal-scene.is-complete { cursor:default; }
