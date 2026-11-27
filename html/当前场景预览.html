@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>当前场景预览｜餐馆重开</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="../css/style.css?v=8">
+  <link rel="stylesheet" href="../css/game.css?v=5">
+  <link rel="stylesheet" href="../css/memory-gallery.css?v=6">
+  <link rel="stylesheet" href="../css/restaurant-tasting.css?v=1">
+  <link rel="stylesheet" href="../css/four-months.css?v=2">
+  <link rel="stylesheet" href="../css/dinner-night.css?v=3">
+  <link rel="stylesheet" href="../css/bombing.css?v=2">
+  <link rel="stylesheet" href="../css/aftermath.css?v=2">
+  <link rel="stylesheet" href="../css/return-home.css?v=2">
+  <link rel="stylesheet" href="../css/reopening.css?v=3">
+  <link rel="stylesheet" href="../css/wedding.css?v=6">
+  <link rel="stylesheet" href="../css/apprentice.css?v=1">
+  <link rel="stylesheet" href="../css/street-fire.css?v=7">
+  <link rel="stylesheet" href="../css/officers-visit.css?v=2">
+  <link rel="stylesheet" href="../css/officers-meal.css?v=1">
+  <link rel="stylesheet" href="../css/truck-departure.css?v=3">
+  <link rel="stylesheet" href="../css/prosperity-choice.css?v=4">
+  <link rel="stylesheet" href="../css/tony-conflict.css?v=2">
+  <link rel="stylesheet" href="../css/tony-tear.css?v=3">
+  <link rel="stylesheet" href="../css/family-call.css?v=3">
+  <link rel="stylesheet" href="../css/za-attack.css?v=2">
+  <link rel="stylesheet" href="../css/za-farewell.css?v=1">
+  <link rel="stylesheet" href="../css/restaurant-raid.css?v=1">
+  <link rel="stylesheet" href="../css/tony-news.css?v=2">
+  <link rel="stylesheet" href="../css/prison-kitchen.css?v=3">
+  <link rel="stylesheet" href="../css/prison-chili.css?v=1">
+  <link rel="stylesheet" href="../css/prison-after-choice.css?v=2">
+  <link rel="stylesheet" href="../css/prison-message.css?v=1">
+  <link rel="stylesheet" href="../css/prison-retaliation.css?v=4">
+  <link rel="stylesheet" href="../css/prison-knife.css?v=1">
+  <link rel="stylesheet" href="../css/prison-release.css?v=2">
+  <link rel="stylesheet" href="../css/prison-home-call.css?v=1">
+  <link rel="stylesheet" href="../css/prison-christmas.css?v=1">
+  <link rel="stylesheet" href="../css/prison-christmas-undercurrent.css?v=2">
+  <link rel="stylesheet" href="../css/prison-blue-on-blue.css?v=3">
+  <link rel="stylesheet" href="../css/prison-escape.css?v=2">
+  <link rel="stylesheet" href="../css/prison-grenade.css?v=2">
+  <link rel="stylesheet" href="../css/prison-grenade-aftermath.css?v=2">
+  <link rel="stylesheet" href="../css/prison-za-reunion.css?v=3">
+  <link rel="stylesheet" href="../css/prison-school-transport.css?v=2">
+  <link rel="stylesheet" href="../css/prison-escape-plan.css?v=2">
+  <link rel="stylesheet" href="../css/prison-jamal-protection.css?v=2">
+  <link rel="stylesheet" href="../css/prison-morgan-trial.css?v=2">
+  <link rel="stylesheet" href="../css/prison-saif-challenge.css?v=2">
+  <link rel="stylesheet" href="../css/prison-jamal-trial.css?v=2">
+  <link rel="stylesheet" href="../css/prison-night-talk.css?v=2">
+  <link rel="stylesheet" href="../css/prison-trunk-choice.css?v=1">
+  <link rel="stylesheet" href="../css/prison-checkpoint.css?v=1">
+  <link rel="stylesheet" href="../css/prison-phone-command.css?v=1">
+  <link rel="stylesheet" href="../css/prison-street-explosion.css?v=2">
+  <link rel="stylesheet" href="../css/prison-children-rescue.css?v=1">
+  <link rel="stylesheet" href="../css/prison-egg-montage.css?v=1">
+  <link rel="stylesheet" href="../css/prison-mobilization.css?v=1">
+  <link rel="stylesheet" href="../css/prison-cola-promise.css?v=1">
+  <link rel="stylesheet" href="../css/prison-potato-confession.css?v=2">
+  <link rel="stylesheet" href="../css/prison-ma-sacrifice.css?v=1">
+  <link rel="stylesheet" href="../css/prison-after-ma.css?v=1">
+  <link rel="stylesheet" href="../css/prison-rescue-choice.css?v=1">
+  <link rel="stylesheet" href="../css/prison-secret-oath.css?v=1">
+  <link rel="stylesheet" href="../css/prison-friday-escape.css?v=1">
+  <link rel="stylesheet" href="../css/prison-desert-flight.css?v=1">
+  <link rel="stylesheet" href="../css/prison-border-village.css?v=1">
+  <link rel="stylesheet" href="../css/prison-village-night.css?v=1">
+  <link rel="stylesheet" href="../css/prison-village-capture.css?v=1">
+  <link rel="stylesheet" href="../css/prison-mouth-choice.css?v=2">
+  <link rel="stylesheet" href="../css/prison-homecoming-d.css?v=1">
+  <link rel="stylesheet" href="../css/prison-restaurant-return-d.css?v=1">
+  <link rel="stylesheet" href="../css/prison-reunion-d.css?v=3">
+  <link rel="stylesheet" href="../css/prison-self-escape-e.css?v=1">
+  <link rel="stylesheet" href="../css/story-summary.css?v=6">
+  <link rel="stylesheet" href="../css/scene-frame.css?v=69">
+  <style>
+    .preview-controls { position:fixed; z-index:200; bottom:8px; left:50%; transform:translateX(-50%); display:flex; gap:20px; white-space:nowrap; font:12px/1.5 sans-serif; }
+    .preview-controls a { color:#294b77; text-underline-offset:3px; }
+  </style>
+</head>
+<body>
+  <nav class="preview-controls" aria-label="仅预览页面显示的快捷入口">
+    <a href="?view=prison-night-talk">深夜谈心</a>
+    <a href="?view=prison-trunk-choice">后备箱的选择</a>
+    <a href="?view=prison-checkpoint">背包里的真相</a>
+    <a href="?view=prison-phone-command">检查站与手机</a>
+    <a href="?view=prison-street-explosion">街头爆炸</a>
+    <a href="?view=prison-children-rescue-hide">返程与救孩子</a>
+    <a href="?view=prison-children-rescue-stay">留守与偷听</a>
+    <a href="?view=prison-egg-montage">煎蛋蒙太奇</a>
+    <a href="?view=prison-mobilization">校长的演说</a>
+    <a href="?view=prison-cola-promise">晚餐与可乐</a>
+    <a href="?view=prison-potato-confession">深夜质问</a>
+    <a href="?view=prison-ma-sacrifice">马俊生的坦白</a>
+    <a href="?view=prison-after-ma">失去兄弟之后</a>
+    <a href="?view=story-summary">故事结束·总结</a>
+    <a href="?view=prison-rescue-choice">营救或自保</a>
+    <a href="?view=prison-self-escape-e">结局E·留下孩子</a>
+    <a href="?view=prison-secret-oath">孩子们的密约</a>
+    <a href="?view=prison-friday-escape">凌晨三点逃离</a>
+    <a href="?view=prison-desert-flight">沙漠逃亡与追捕</a>
+    <a href="?view=prison-border-village">越境与村口古树</a>
+    <a href="?view=prison-village-night">村庄晚餐与篝火</a>
+    <a href="?view=prison-village-capture">村庄追捕与告别</a>
+    <a href="?view=prison-mouth-choice">张嘴的抉择</a>
+    <a href="?view=prison-homecoming-d">结局D·归国与梦</a>
+    <a href="?view=prison-restaurant-return-d">多年后重访龙餐馆</a>
+    <a href="?view=prison-reunion-d">结局D·重逢</a>
+    <a href="?view=prison-jamal-trial">贾马尔抢先挑战</a>
+    <a href="?view=prison-saif-challenge">塞夫冲向操场</a>
+    <a href="?view=prison-morgan-trial">摩根与终极考验</a>
+    <a href="?view=prison-jamal-protection">贾马尔与眼罩</a>
+    <a href="?view=prison-escape-plan">半年后逃跑计划</a>
+    <a href="?view=prison-school-transport">押往学校</a>
+    <a href="?view=prison-za-reunion-fake">老扎重逢</a>
+    <a href="?view=prison-za-reunion-real">辣椒水结局 A</a>
+    <a href="?view=prison-grenade-aftermath">捡起手榴弹后续</a>
+    <a href="?view=prison-grenade">手榴弹抉择 B</a>
+    <a href="?view=prison-escape">废墟中逃亡</a>
+    <a href="?view=prison-blue-on-blue">Blue on blue</a>
+    <a href="?view=prison-christmas-undercurrent">圣诞暗流</a>
+    <a href="?view=prison-christmas">营地圣诞节</a>
+    <a href="?view=prison-home-call">一分钟家书</a>
+    <a href="?view=prison-release-go">病房与释放</a>
+    <a href="?view=prison-release-decline">未撒辣椒后续</a>
+    <a href="?view=prison-knife">厨房冲突与落刀</a>
+    <a href="?view=prison-retaliation">长官追责</a>
+    <a href="?view=prison-message">密信与新选择</a>
+    <a href="?view=prison-after-fake">假药水后续</a>
+    <a href="?view=prison-after-real">真药水后续</a>
+    <a href="?view=chili">辣椒水选择</a>
+    <a href="?view=prison">监狱与军营</a>
+    <a href="?view=tony-news">王托尼死讯</a>
+    <a href="?view=raid">一年半后</a>
+    <a href="?view=za-farewell">老扎告别</a>
+    <a href="?view=za-attack">深夜袭击</a>
+    <a href="?view=call">视频通话</a>
+    <a href="?view=tear">思乡落泪</a>
+    <a href="?view=conflict">深夜争执</a>
+    <a href="?view=prosperity">去留选择</a>
+    <a href="?view=truck">车辆驶远</a>
+    <a href="?view=meal">军官用餐</a>
+    <a href="?view=officers">军官来访</a>
+    <a href="?view=medicine">药品与威胁</a>
+    <a href="?view=burn">烧穿转场</a>
+    <a href="?view=fire">街头战火</a>
+    <a href="?view=apprentice">深夜收徒</a>
+    <a href="?view=family">全家福</a>
+    <a href="?view=wedding">婚宴长图</a>
+    <a href="?view=reopen">餐馆重开</a>
+    <a href="?view=return">回家选择</a>
+    <a href="?view=shelter">逃入防空洞</a>
+    <a href="?view=attack">凌晨5:33</a>
+    <a href="?view=dinner">晚饭与新闻</a>
+    <a href="?view=months">四个月后</a>
+    <a href="?view=start">试菜开头</a>
+    <a href="?view=choices">试菜选项框</a>
+    <a href="index.html">正式页面</a>
+  </nav>
+  <script src="../js/story-summary.js?v=3"></script>
+  <script src="../js/prison-reunion-d.js?v=4"></script>
+  <script src="../js/prison-restaurant-return-d.js?v=2"></script>
+  <script src="../js/prison-homecoming-d.js?v=2"></script>
+  <script src="../js/prison-mouth-choice.js?v=4"></script>
+  <script src="../js/prison-village-capture.js?v=2"></script>
+  <script src="../js/prison-village-night.js?v=3"></script>
+  <script src="../js/prison-border-village.js?v=2"></script>
+  <script src="../js/prison-desert-flight.js?v=2"></script>
+  <script src="../js/prison-friday-escape.js?v=2"></script>
+  <script src="../js/prison-secret-oath.js?v=2"></script>
+  <script src="../js/prison-self-escape-e.js?v=2"></script>
+  <script src="../js/prison-rescue-choice.js?v=3"></script>
+  <script src="../js/prison-after-ma.js?v=2"></script>
+  <script src="../js/prison-ma-sacrifice.js?v=2"></script>
+  <script src="../js/prison-potato-confession.js?v=1"></script>
+  <script src="../js/prison-cola-promise.js?v=2"></script>
+  <script src="../js/prison-mobilization.js?v=2"></script>
+  <script src="../js/prison-egg-montage.js?v=2"></script>
+  <script src="../js/prison-children-rescue.js?v=2"></script>
+  <script src="../js/prison-street-explosion.js?v=3"></script>
+  <script src="../js/prison-phone-command.js?v=2"></script>
+  <script src="../js/prison-checkpoint.js?v=3"></script>
+  <script src="../js/prison-trunk-choice.js?v=3"></script>
+  <script src="../js/prison-night-talk.js?v=2"></script>
+  <script src="../js/prison-jamal-trial.js?v=2"></script>
+  <script src="../js/prison-saif-challenge.js?v=3"></script>
+  <script src="../js/prison-morgan-trial.js?v=2"></script>
+  <script src="../js/prison-jamal-protection.js?v=2"></script>
+  <script src="../js/prison-escape-plan.js?v=2"></script>
+  <script src="../js/prison-school-transport.js?v=2"></script>
+  <script src="../js/prison-za-reunion.js?v=2"></script>
+  <script src="../js/prison-grenade-aftermath.js?v=2"></script>
+  <script src="../js/prison-grenade.js?v=4"></script>
+  <script src="../js/prison-escape.js?v=2"></script>
+  <script src="../js/prison-blue-on-blue.js?v=2"></script>
+  <script src="../js/prison-christmas-undercurrent.js?v=2"></script>
+  <script src="../js/prison-christmas.js?v=2"></script>
+  <script src="../js/prison-home-call.js?v=2"></script>
+  <script src="../js/prison-release.js?v=2"></script>
+  <script src="../js/prison-knife.js?v=2"></script>
+  <script src="../js/prison-retaliation.js?v=6"></script>
+  <script src="../js/prison-message.js?v=3"></script>
+  <script src="../js/prison-after-choice.js?v=4"></script>
+  <script src="../js/prison-chili.js?v=2"></script>
+  <script src="../js/prison-kitchen.js?v=2"></script>
+  <script src="../js/tony-news.js?v=2"></script>
+  <script src="../js/restaurant-raid.js?v=2"></script>
+  <script src="../js/za-farewell.js?v=2"></script>
+  <script src="../js/za-attack.js?v=2"></script>
+  <script src="../js/family-call.js?v=2"></script>
+  <script src="../js/tony-tear.js?v=7"></script>
+  <script src="../js/tony-conflict.js?v=3"></script>
+  <script src="../js/prosperity-choice.js?v=5"></script>
+  <script src="../js/truck-departure.js?v=6"></script>
+  <script src="../js/officers-meal.js?v=2"></script>
+  <script src="../js/officers-visit.js?v=2"></script>
+  <script src="../js/street-fire.js?v=8"></script>
+  <script src="../js/apprentice.js?v=2"></script>
+  <script src="../js/wedding.js?v=3"></script>
+  <script src="../js/reopening.js?v=2"></script>
+  <script src="../js/return-home.js?v=3"></script>
+  <script src="../js/aftermath.js?v=2"></script>
+  <script src="../js/bombing.js?v=4"></script>
+  <script src="../js/dinner-night.js?v=3"></script>
+  <script src="../js/four-months.js?v=2"></script>
+  <script src="../js/restaurant-tasting.js?v=5"></script>
+  <script>
+    const view = new URLSearchParams(location.search).get("view");
+    if (view === "start" || view === "choices") window.showRestaurantTasting({choices:view === "choices"});
+    else if (view === "months") window.showFourMonths();
+    else if (view === "dinner") window.showDinnerNight();
+    else if (view === "attack") window.showBombing();
+    else if (view === "shelter") window.showAftermath();
+    else if (view === "return") window.showReturnHome();
+    else if (view === "prison-reunion-d") window.showPrisonReunionD(null,{preview:true});
+    else if (view === "prison-restaurant-return-d") window.showPrisonRestaurantReturnD(null,{preview:true});
+    else if (view === "prison-homecoming-d") window.showPrisonHomecomingD(null,{preview:true});
+    else if (view === "prison-mouth-choice") window.showPrisonMouthChoice(null,{preview:true});
+    else if (view === "prison-village-capture") window.showPrisonVillageCapture(null,{preview:true});
+    else if (view === "prison-village-night") window.showPrisonVillageNight(null,{preview:true});
+    else if (view === "prison-border-village") window.showPrisonBorderVillage(null,{preview:true});
+    else if (view === "prison-desert-flight") window.showPrisonDesertFlight(null,{preview:true});
+    else if (view === "prison-friday-escape") window.showPrisonFridayEscape(null,{preview:true});
+    else if (view === "prison-secret-oath") window.showPrisonSecretOath(null,{preview:true});
+    else if (view === "prison-self-escape-e") window.showPrisonSelfEscapeE(null,{preview:true});
+    else if (view === "story-summary") window.showStoryFinale(null,{ending:new URLSearchParams(location.search).get("ending")||"D",preview:true});
+    else if (view === "prison-rescue-choice") window.showPrisonRescueChoice(null,{preview:true});
+    else if (view === "prison-after-ma") window.showPrisonAfterMa(null,{preview:true});
+    else if (view === "prison-ma-sacrifice") window.showPrisonConfessionNextChapter(null,{preview:true});
+    else if (view === "prison-potato-confession") window.showPrisonPotatoConfession(null,{preview:true});
+    else if (view === "prison-cola-promise") window.showPrisonColaPromise(null,{preview:true});
+    else if (view === "prison-mobilization") window.showPrisonEggNextChapter(null,{preview:true});
+    else if (view === "prison-egg-montage") window.showPrisonEggMontage(null,{preview:true});
+    else if (view === "prison-children-rescue-hide") window.showPrisonChildrenRescue(null,"hide",{preview:true});
+    else if (view === "prison-children-rescue-stay") window.showPrisonChildrenRescue(null,"stay",{preview:true});
+    else if (view === "prison-street-explosion") window.showPrisonStreetExplosion(null,{preview:true});
+    else if (view === "prison-phone-command") window.showPrisonPhoneCommand(null,{preview:true});
+    else if (view === "prison-checkpoint") window.showPrisonTrunkNextChapter(null,"hide",{preview:true});
+    else if (view === "prison-trunk-choice") window.showPrisonTrunkChoice(null,{preview:true});
+    else if (view === "prison-night-talk") window.showPrisonNightTalk(null,{preview:true});
+    else if (view === "prison-jamal-trial") window.showPrisonSaifChallengeOutcome(null,null,{preview:true});
+    else if (view === "prison-saif-challenge") window.showPrisonSaifChallenge(null,{preview:true});
+    else if (view === "prison-morgan-trial") window.showPrisonMorganTrial(null,{preview:true});
+    else if (view === "prison-jamal-protection") window.showPrisonJamalProtection(null,{preview:true});
+    else if (view === "prison-escape-plan") window.showPrisonEscapePlan(null,{preview:true});
+    else if (view === "prison-school-transport") window.showPrisonSchoolTransport(null,{preview:true});
+    else if (view === "prison-za-reunion-fake") window.showPrisonZaReunion(null,"fake");
+    else if (view === "prison-za-reunion-real") window.showPrisonZaReunion(null,"real");
+    else if (view === "prison-grenade-aftermath") window.showPrisonGrenadeNextChapter(null,{preview:true});
+    else if (view === "prison-grenade") window.showPrisonGrenade();
+    else if (view === "prison-escape") window.showPrisonEscape();
+    else if (view === "prison-blue-on-blue") window.showPrisonBlueOnBlue();
+    else if (view === "prison-christmas-undercurrent") window.showPrisonChristmasUndercurrent();
+    else if (view === "prison-christmas") window.showPrisonChristmas();
+    else if (view === "prison-home-call") window.showPrisonHomeCall();
+    else if (view === "prison-release-go") window.showPrisonNextChapter(null,"go");
+    else if (view === "prison-release-decline") window.showPrisonNextChapter(null,"decline");
+    else if (view === "prison-release") window.showPrisonNextChapter();
+    else if (view === "prison-knife") window.showPrisonKnifeIncident(null,{preview:true});
+    else if (view === "prison-retaliation") window.showPrisonRetaliation(null,{preview:true});
+    else if (view === "prison-message") window.showPrisonMessage();
+    else if (view === "prison-after-fake") window.showPrisonAfterChoice(null,"fake");
+    else if (view === "prison-after-real") window.showPrisonAfterChoice(null,"real");
+    else if (view === "prison-after") window.showPrisonAfterChoice();
+    else if (view === "chili") window.showPrisonChili();
+    else if (view === "prison") window.showPrisonKitchen();
+    else if (view === "tony-news") window.showTonyNews();
+    else if (view === "raid") window.showRestaurantRaid();
+    else if (view === "za-farewell") window.showZaFarewell();
+    else if (view === "za-attack") window.showZaAttack();
+    else if (view === "call") window.showFamilyVideoCall();
+    else if (view === "tear") window.showTonyTear();
+    else if (view === "conflict") window.showTonyConflict();
+    else if (view === "prosperity") window.showProsperityChoice(null,new URLSearchParams(location.search).get("image")==="2"?1:0);
+    else if (view === "truck") window.showTruckDeparture();
+    else if (view === "meal") window.showOfficersMeal();
+    else if (view === "officers") window.showOfficersVisit();
+    else if (view === "medicine") window.showMedicineThreat();
+    else if (view === "burn") window.showStreetFire(null,2);
+    else if (view === "fire") window.showStreetFire();
+    else if (view === "apprentice") window.showApprentice();
+    else if (view === "family") window.showWeddingFamily();
+    else if (view === "wedding") window.showWedding();
+    else window.showReopening();
+  </script>
+</body>
+</html>

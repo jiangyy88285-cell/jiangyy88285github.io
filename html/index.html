@@ -6,10 +6,83 @@
   <meta name="theme-color" content="#e1dad2">
   <title>场景 1｜纸张展开</title>
   <link rel="icon" href="data:,">
-  <link rel="stylesheet" href="../css/style.css?v=6">
+  <link rel="stylesheet" href="../css/style.css?v=8">
+  <link rel="stylesheet" href="../css/game.css?v=5">
+  <link rel="stylesheet" href="../css/peace-intro.css?v=5">
+  <link rel="stylesheet" href="../css/interview-intro.css?v=1">
+  <link rel="stylesheet" href="../css/memory-gallery.css?v=6">
+  <link rel="stylesheet" href="../css/restaurant-entrance.css?v=2">
+  <link rel="stylesheet" href="../css/restaurant-tasting.css?v=1">
+  <link rel="stylesheet" href="../css/four-months.css?v=2">
+  <link rel="stylesheet" href="../css/dinner-night.css?v=3">
+  <link rel="stylesheet" href="../css/bombing.css?v=2">
+  <link rel="stylesheet" href="../css/aftermath.css?v=2">
+  <link rel="stylesheet" href="../css/return-home.css?v=2">
+  <link rel="stylesheet" href="../css/reopening.css?v=3">
+  <link rel="stylesheet" href="../css/wedding.css?v=6">
+  <link rel="stylesheet" href="../css/apprentice.css?v=1">
+  <link rel="stylesheet" href="../css/street-fire.css?v=7">
+  <link rel="stylesheet" href="../css/officers-visit.css?v=2">
+  <link rel="stylesheet" href="../css/officers-meal.css?v=1">
+  <link rel="stylesheet" href="../css/truck-departure.css?v=3">
+  <link rel="stylesheet" href="../css/prosperity-choice.css?v=4">
+  <link rel="stylesheet" href="../css/tony-conflict.css?v=2">
+  <link rel="stylesheet" href="../css/tony-tear.css?v=3">
+  <link rel="stylesheet" href="../css/family-call.css?v=3">
+  <link rel="stylesheet" href="../css/za-attack.css?v=2">
+  <link rel="stylesheet" href="../css/za-farewell.css?v=1">
+  <link rel="stylesheet" href="../css/restaurant-raid.css?v=1">
+  <link rel="stylesheet" href="../css/tony-news.css?v=2">
+  <link rel="stylesheet" href="../css/prison-kitchen.css?v=3">
+  <link rel="stylesheet" href="../css/prison-chili.css?v=1">
+  <link rel="stylesheet" href="../css/prison-after-choice.css?v=2">
+  <link rel="stylesheet" href="../css/prison-message.css?v=1">
+  <link rel="stylesheet" href="../css/prison-retaliation.css?v=4">
+  <link rel="stylesheet" href="../css/prison-knife.css?v=1">
+  <link rel="stylesheet" href="../css/prison-release.css?v=2">
+  <link rel="stylesheet" href="../css/prison-home-call.css?v=1">
+  <link rel="stylesheet" href="../css/prison-christmas.css?v=1">
+  <link rel="stylesheet" href="../css/prison-christmas-undercurrent.css?v=2">
+  <link rel="stylesheet" href="../css/prison-blue-on-blue.css?v=3">
+  <link rel="stylesheet" href="../css/prison-escape.css?v=2">
+  <link rel="stylesheet" href="../css/prison-grenade.css?v=2">
+  <link rel="stylesheet" href="../css/prison-grenade-aftermath.css?v=2">
+  <link rel="stylesheet" href="../css/prison-za-reunion.css?v=3">
+  <link rel="stylesheet" href="../css/prison-school-transport.css?v=2">
+  <link rel="stylesheet" href="../css/prison-escape-plan.css?v=2">
+  <link rel="stylesheet" href="../css/prison-jamal-protection.css?v=2">
+  <link rel="stylesheet" href="../css/prison-morgan-trial.css?v=2">
+  <link rel="stylesheet" href="../css/prison-saif-challenge.css?v=2">
+  <link rel="stylesheet" href="../css/prison-jamal-trial.css?v=2">
+  <link rel="stylesheet" href="../css/prison-night-talk.css?v=2">
+  <link rel="stylesheet" href="../css/prison-trunk-choice.css?v=1">
+  <link rel="stylesheet" href="../css/prison-checkpoint.css?v=1">
+  <link rel="stylesheet" href="../css/prison-phone-command.css?v=1">
+  <link rel="stylesheet" href="../css/prison-street-explosion.css?v=2">
+  <link rel="stylesheet" href="../css/prison-children-rescue.css?v=1">
+  <link rel="stylesheet" href="../css/prison-egg-montage.css?v=1">
+  <link rel="stylesheet" href="../css/prison-mobilization.css?v=1">
+  <link rel="stylesheet" href="../css/prison-cola-promise.css?v=1">
+  <link rel="stylesheet" href="../css/prison-potato-confession.css?v=2">
+  <link rel="stylesheet" href="../css/prison-ma-sacrifice.css?v=1">
+  <link rel="stylesheet" href="../css/prison-after-ma.css?v=1">
+  <link rel="stylesheet" href="../css/prison-rescue-choice.css?v=1">
+  <link rel="stylesheet" href="../css/prison-secret-oath.css?v=1">
+  <link rel="stylesheet" href="../css/prison-friday-escape.css?v=1">
+  <link rel="stylesheet" href="../css/prison-desert-flight.css?v=1">
+  <link rel="stylesheet" href="../css/prison-border-village.css?v=1">
+  <link rel="stylesheet" href="../css/prison-village-night.css?v=1">
+  <link rel="stylesheet" href="../css/prison-village-capture.css?v=1">
+  <link rel="stylesheet" href="../css/prison-mouth-choice.css?v=2">
+  <link rel="stylesheet" href="../css/prison-homecoming-d.css?v=1">
+  <link rel="stylesheet" href="../css/prison-restaurant-return-d.css?v=1">
+  <link rel="stylesheet" href="../css/prison-reunion-d.css?v=3">
+  <link rel="stylesheet" href="../css/prison-self-escape-e.css?v=1">
+  <link rel="stylesheet" href="../css/story-summary.css?v=6">
+  <link rel="stylesheet" href="../css/scene-frame.css?v=69">
 </head>
 <body>
-  <main class="experience">
+  <main class="experience" id="opening-experience">
     <div class="scene" id="scene" aria-label="场景 1，点击纸团展开海报">
       <img class="ball-photo" id="ball-photo" src="../js/images/paper-ball.png" alt="一团揉皱的纸" draggable="false">
       <div class="paper-shadow" id="paper-shadow" aria-hidden="true"></div>
@@ -21,9 +94,15 @@
         <canvas class="ink" id="ink-quotes"></canvas>
         <img class="final-original" id="final-original" alt="完整展开的原图海报" draggable="false">
       </div>
-      <img class="flattened-poster" id="flattened-poster" src="../js/images/poster-flat.png" alt="褶皱消退后的平铺海报" draggable="false" aria-hidden="true">
+      <div class="flat-edge-blend">
+        <img class="flattened-poster" id="flattened-poster" src="../js/images/poster-flat.png" alt="褶皱消退后的平铺海报" draggable="false" aria-hidden="true">
+      </div>
       <div class="menu-panel" id="menu-panel" aria-hidden="true">
         <img id="menu-art" src="../js/images/poster-menu.png" alt="右侧菜单：안내（说明）、목차（目录）、더보기（更多）和 게임 시작（开始游戏）" draggable="false">
+        <button class="menu-hotspot hotspot-help" data-menu="help" aria-label="안내 · 说明" disabled></button>
+        <button class="menu-hotspot hotspot-chapters" data-menu="chapters" aria-label="목차 · 章节目录" disabled></button>
+        <button class="menu-hotspot hotspot-more" data-menu="more" aria-label="더보기 · 关于与资料" disabled></button>
+        <button class="menu-hotspot hotspot-start" data-menu="start" aria-label="게임 시작 · 开始游戏" disabled></button>
       </div>
       <button class="paper-trigger" id="paper-trigger" aria-label="点击打开纸团" disabled></button>
       <button class="menu-reveal" id="menu-reveal" aria-label="点击画面，显示右侧菜单" hidden></button>
@@ -34,8 +113,121 @@
     </div>
     <noscript>请开启 JavaScript，以播放纸张展开动画。</noscript>
   </main>
+  <main id="game-view" class="game-view" hidden>
+    <svg width="0" height="0" aria-hidden="true" style="position:absolute"><defs><filter id="paper-blue" color-interpolation-filters="sRGB"><feColorMatrix type="matrix" values=".170 .570 .060 0 .16 .14 .47 .05 0 .29 .10 .33 .03 0 .47 0 0 0 1 0"/></filter></defs></svg>
+    <header class="game-header">
+      <button class="game-brand" id="game-home" aria-label="返回开场">용식당<span>Once Upon a Time in the Middle East</span></button>
+      <nav class="game-tools" aria-label="阅读工具">
+        <button id="game-contents">목차</button>
+        <button id="game-notebook">기록</button>
+        <button id="game-sound" aria-pressed="false">소리 끔</button>
+        <button id="game-language">中文</button>
+        <button id="game-help">안내</button>
+      </nav>
+    </header>
+    <div class="game-status" aria-label="叙事状态">
+      <p class="chapter-progress" id="chapter-progress"></p>
+      <div class="state-marks" id="state-marks"></div>
+    </div>
+    <div class="reading-layout" id="reading-layout">
+      <figure class="collage-stage" id="collage-stage">
+        <span class="tape tape-top" aria-hidden="true"></span>
+        <img class="collage-art" id="collage-art" src="../js/images/story/restaurant.jpg" alt="">
+        <div class="collage-grain" aria-hidden="true"></div>
+        <div class="collage-tag"><span id="collage-number"></span><p id="collage-chapter"></p></div>
+        <div class="memory-slip" id="memory-slip" hidden><img id="memory-image" src="../js/images/story/family.jpg" alt=""><span id="memory-caption"></span></div>
+        <p class="collage-quote" id="collage-quote"></p>
+      </figure>
+      <article class="story-sheet" id="story-sheet">
+        <p class="story-meta" id="story-meta"></p>
+        <h1 id="story-title" tabindex="-1"></h1>
+        <div id="story-prose" class="story-prose"></div>
+        <div id="story-actions" class="story-actions"></div>
+        <p id="story-feedback" class="story-feedback" aria-live="polite"></p>
+        <footer class="reading-footer"><button id="game-back">이전 페이지</button><span id="save-indicator">자동 저장</span></footer>
+      </article>
+    </div>
+    <p class="game-footnote" id="game-footnote"></p>
+  </main>
+  <dialog id="game-dialog" class="game-dialog" aria-labelledby="dialog-title">
+    <div class="dialog-heading"><h2 id="dialog-title"></h2><button id="dialog-close" aria-label="关闭">×</button></div>
+    <div id="dialog-content"></div>
+  </dialog>
   <script src="../js/data.js?v=3"></script>
   <script src="../js/paper-motion.js?v=3"></script>
-  <script src="../js/main.js?v=6"></script>
+  <script src="../js/main.js?v=7"></script>
+  <script src="../js/story-data.js?v=3"></script>
+  <script src="../js/game.js?v=4"></script>
+  <script src="../js/peace-intro.js?v=4"></script>
+  <script src="../js/story-summary.js?v=3"></script>
+  <script src="../js/prison-reunion-d.js?v=4"></script>
+  <script src="../js/prison-restaurant-return-d.js?v=2"></script>
+  <script src="../js/prison-homecoming-d.js?v=2"></script>
+  <script src="../js/prison-mouth-choice.js?v=4"></script>
+  <script src="../js/prison-village-capture.js?v=2"></script>
+  <script src="../js/prison-village-night.js?v=3"></script>
+  <script src="../js/prison-border-village.js?v=2"></script>
+  <script src="../js/prison-desert-flight.js?v=2"></script>
+  <script src="../js/prison-friday-escape.js?v=2"></script>
+  <script src="../js/prison-secret-oath.js?v=2"></script>
+  <script src="../js/prison-self-escape-e.js?v=2"></script>
+  <script src="../js/prison-rescue-choice.js?v=3"></script>
+  <script src="../js/prison-after-ma.js?v=2"></script>
+  <script src="../js/prison-ma-sacrifice.js?v=2"></script>
+  <script src="../js/prison-potato-confession.js?v=1"></script>
+  <script src="../js/prison-cola-promise.js?v=2"></script>
+  <script src="../js/prison-mobilization.js?v=2"></script>
+  <script src="../js/prison-egg-montage.js?v=2"></script>
+  <script src="../js/prison-children-rescue.js?v=2"></script>
+  <script src="../js/prison-street-explosion.js?v=3"></script>
+  <script src="../js/prison-phone-command.js?v=2"></script>
+  <script src="../js/prison-checkpoint.js?v=3"></script>
+  <script src="../js/prison-trunk-choice.js?v=3"></script>
+  <script src="../js/prison-night-talk.js?v=2"></script>
+  <script src="../js/prison-jamal-trial.js?v=2"></script>
+  <script src="../js/prison-saif-challenge.js?v=3"></script>
+  <script src="../js/prison-morgan-trial.js?v=2"></script>
+  <script src="../js/prison-jamal-protection.js?v=2"></script>
+  <script src="../js/prison-escape-plan.js?v=2"></script>
+  <script src="../js/prison-school-transport.js?v=2"></script>
+  <script src="../js/prison-za-reunion.js?v=2"></script>
+  <script src="../js/prison-grenade-aftermath.js?v=2"></script>
+  <script src="../js/prison-grenade.js?v=4"></script>
+  <script src="../js/prison-escape.js?v=2"></script>
+  <script src="../js/prison-blue-on-blue.js?v=2"></script>
+  <script src="../js/prison-christmas-undercurrent.js?v=2"></script>
+  <script src="../js/prison-christmas.js?v=2"></script>
+  <script src="../js/prison-home-call.js?v=2"></script>
+  <script src="../js/prison-release.js?v=2"></script>
+  <script src="../js/prison-knife.js?v=2"></script>
+  <script src="../js/prison-retaliation.js?v=6"></script>
+  <script src="../js/prison-message.js?v=3"></script>
+  <script src="../js/prison-after-choice.js?v=4"></script>
+  <script src="../js/prison-chili.js?v=2"></script>
+  <script src="../js/prison-kitchen.js?v=2"></script>
+  <script src="../js/tony-news.js?v=2"></script>
+  <script src="../js/restaurant-raid.js?v=2"></script>
+  <script src="../js/za-farewell.js?v=2"></script>
+  <script src="../js/za-attack.js?v=2"></script>
+  <script src="../js/family-call.js?v=2"></script>
+  <script src="../js/tony-tear.js?v=7"></script>
+  <script src="../js/tony-conflict.js?v=3"></script>
+  <script src="../js/prosperity-choice.js?v=5"></script>
+  <script src="../js/truck-departure.js?v=6"></script>
+  <script src="../js/officers-meal.js?v=2"></script>
+  <script src="../js/officers-visit.js?v=2"></script>
+  <script src="../js/street-fire.js?v=8"></script>
+  <script src="../js/apprentice.js?v=2"></script>
+  <script src="../js/wedding.js?v=3"></script>
+  <script src="../js/reopening.js?v=2"></script>
+  <script src="../js/return-home.js?v=3"></script>
+  <script src="../js/aftermath.js?v=2"></script>
+  <script src="../js/bombing.js?v=4"></script>
+  <script src="../js/dinner-night.js?v=3"></script>
+  <script src="../js/four-months.js?v=2"></script>
+  <script src="../js/restaurant-tasting.js?v=5"></script>
+  <script src="../js/restaurant-entrance.js?v=3"></script>
+  <script src="../js/memory-gallery.js?v=11"></script>
+  <script src="../js/interview-intro.js?v=4"></script>
 </body>
 </html>
